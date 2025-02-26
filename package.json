@@ -1,6 +1,6 @@
 {
   "name": "upassist.neos.contentaiassistent",
-  "version": "0.0.0",
+  "version": "0.0.1-0",
   "description": "A content ai assistent package for Neos",
   "main": "index.js",
   "scripts": {
