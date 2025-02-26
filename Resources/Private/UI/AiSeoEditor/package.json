@@ -1,0 +1,22 @@
+{
+  "name": "ai-seo-editor",
+  "version": "1.0.0",
+  "description": "AI-powered SEO editor for Neos CMS",
+  "scripts": {
+    "build": "neos-react-scripts build",
+    "watch": "neos-react-scripts watch"
+  },
+  "devDependencies": {
+    "@neos-project/neos-ui-extensibility": "^8.3.0",
+    "@neos-project/neos-ui-extensibility-webpack-adapter": "^8.3.0",
+    "@neos-project/react-ui-components": "^8.3.0"
+  },
+  "neos": {
+    "sourceDirectory": "src",
+    "buildTargetDirectory": "../../../Public/JavaScript/Inspector/AiSeoEditor"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "lucide-react": "^0.475.0"
+  }
+}

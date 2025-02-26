@@ -1,0 +1,42 @@
+.AiSeoEditor__custom-textarea-wrapper___1HkE_ {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: relative;
+}
+
+.AiSeoEditor__custom-textarea___1URxx {
+	width: 100%;
+	min-height: 100px;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 1.5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+	transition: border-color 0.2s;
+}
+
+.AiSeoEditor__custom-textarea___1URxx:focus {
+	outline: none;
+	border-color: #0073e6;
+	box-shadow: 0 0 4px rgba(0, 115, 230, 0.3);
+}
+
+.AiSeoEditor__generate-button___1lkuj {
+	align-self: end;
+	display: flex;
+	font-size: small;
+	align-items: center;
+	cursor: pointer;
+	color: #0073e6;
+	transition: color 0.2s;
+	user-select: none;
+}
+
+.AiSeoEditor__generate-button___1lkuj:hover {
+	color: #005bb5;
+}
+

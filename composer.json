@@ -1,0 +1,20 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "upassist/neos-contentaiassistent",
+    "require": {
+        "neos/flow": "*",
+        "neos/seo": "*",
+        "openai-php/client": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "UpAssist\\Neos\\ContentAiAssistent\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "UpAssist.Neos.ContentAiAssistent"
+        }
+    }
+}

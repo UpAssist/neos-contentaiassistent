@@ -1,0 +1,9 @@
+-
+  name: 'Content AI Assistant'
+  uriPattern: 'neos/content-ai-assistant/{@action}'
+  defaults:
+    '@package': 'UpAssist.Neos.ContentAiAssistent'
+    '@controller': 'Ai'
+    '@format': 'json'
+  httpMethods: ['POST']
+  appendExceedingArguments: true

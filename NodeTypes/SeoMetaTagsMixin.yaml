@@ -1,0 +1,14 @@
+'Neos.Seo:SeoMetaTagsMixin':
+  properties:
+    metaDescription:
+      ui:
+        inspector:
+          editor: 'UpAssist.Neos.ContentAiAssistent/AiSeoEditor'
+          editorOptions:
+            propertyName: 'metaDescription'
+    metaKeywords:
+      ui:
+        inspector:
+          editor: 'UpAssist.Neos.ContentAiAssistent/AiSeoEditor'
+          editorOptions:
+            propertyName: 'metaKeywords'

@@ -1,0 +1,41 @@
+.custom-textarea-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: relative;
+}
+
+.custom-textarea {
+	width: 100%;
+	min-height: 100px;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 1.5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+	transition: border-color 0.2s;
+}
+
+.custom-textarea:focus {
+	outline: none;
+	border-color: #0073e6;
+	box-shadow: 0 0 4px rgba(0, 115, 230, 0.3);
+}
+
+.generate-button {
+	align-self: end;
+	display: flex;
+	font-size: small;
+	align-items: center;
+	cursor: pointer;
+	color: #0073e6;
+	transition: color 0.2s;
+	user-select: none;
+}
+
+.generate-button:hover {
+	color: #005bb5;
+}

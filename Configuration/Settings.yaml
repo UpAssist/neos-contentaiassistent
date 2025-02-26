@@ -1,0 +1,33 @@
+UpAssist:
+  Neos:
+    ContentAiAssistent:
+      apiKey: '%env:OPENAI_API_KEY%'
+      textProperties:
+        - headline
+        - text
+        - content
+        - cite
+
+Neos:
+  Neos:
+    Ui:
+      resources:
+        stylesheets:
+          'UpAssist.Neos.ContentAiAssistent:AiSeoEditor':
+            resource: resource://UpAssist.Neos.ContentAiAssistent/Public/JavaScript/Inspector/AiSeoEditor/Plugin.css
+        javascript:
+          'UpAssist.Neos.ContentAiAssistent:AiSeoEditor':
+            resource: resource://UpAssist.Neos.ContentAiAssistent/Public/JavaScript/Inspector/AiSeoEditor/Plugin.js
+  Flow:
+    mvc:
+      routes:
+        UpAssist.Neos.ContentAiAssistent: true
+    security:
+      authentication:
+        providers:
+          'Neos.Neos:Backend':
+            requestPatterns:
+              'UpAssist.Neos.ContentAiAssistent:BackendControllers':
+                pattern: 'ControllerObjectName'
+                patternOptions:
+                  controllerObjectNamePattern: 'UpAssist\Neos\ContentAiAssistent\Controller\.*'
