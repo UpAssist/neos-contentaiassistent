@@ -14,6 +14,12 @@ use OpenAI\Client;
 class OpenAiService
 {
     /**
+     * @Flow\InjectConfiguration(path="aiModel")
+     * @var string
+     */
+    protected $aiModel;
+
+    /**
      * @Flow\InjectConfiguration(path="apiKey")
      * @var string
      */
@@ -36,7 +42,7 @@ class OpenAiService
     public function generateSeoData(NodeInterface $node): array
     {
         $response = \OpenAI::client($this->apiKey)->chat()->create([
-            'model' => 'gpt-4o-mini',
+            'model' => $this->aiModel,
             'messages' => [
                 ['role' => 'system', 'content' => 'You are an SEO content assistant.'],
                 ['role' => 'system', 'content' => 'Generate a JSON object containing the following:

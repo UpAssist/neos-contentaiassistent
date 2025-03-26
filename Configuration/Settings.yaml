@@ -1,6 +1,8 @@
 UpAssist:
   Neos:
     ContentAiAssistent:
+      # Models: https://platform.openai.com/docs/models (you need to use a chat model)
+      aiModel: 'gpt-4o-mini'
       apiKey: '%env:OPENAI_API_KEY%'
       textProperties:
         - headline
